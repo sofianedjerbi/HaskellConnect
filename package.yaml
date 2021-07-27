@@ -1,10 +1,10 @@
-name:                CN4
+name:                Connect4
 version:             0.1.0.0
-github:              "githubuser/CN4"
-license:             BSD3
-author:              "Author name here"
-maintainer:          "example@example.com"
-copyright:           "2021 Author name here"
+github:              "Kugge/Haskell-Connect4"
+license:             GNU3
+author:              "Sofiane DJERBI (@Kugge)"
+maintainer:          "sofiane.djerbi38@gmail.com"
+copyright:           "2021 Sofiane DJERBI"
 
 extra-source-files:
 - README.md
@@ -17,16 +17,17 @@ extra-source-files:
 # To avoid duplicated efforts in documentation and dealing with the
 # complications of embedding Haddock markup inside cabal files, it is
 # common to point users to the README.md file.
-description:         Please see the README on GitHub at <https://github.com/githubuser/CN4#readme>
+description:         Please see the README on GitHub at <https://github.com/Kugge/Haskell-Connect4#readme>
 
 dependencies:
 - base >= 4.7 && < 5
+- gloss
 
 library:
   source-dirs: src
 
 executables:
-  CN4-exe:
+  Connect4-exe:
     main:                Main.hs
     source-dirs:         app
     ghc-options:
@@ -34,15 +35,4 @@ executables:
     - -rtsopts
     - -with-rtsopts=-N
     dependencies:
-    - CN4
-
-tests:
-  CN4-test:
-    main:                Spec.hs
-    source-dirs:         test
-    ghc-options:
-    - -threaded
-    - -rtsopts
-    - -with-rtsopts=-N
-    dependencies:
-    - CN4
+    - Connect4
